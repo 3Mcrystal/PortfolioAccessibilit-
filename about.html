@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="À propos de moi - Portfolio développeur accessible et ergonomique" />
+    <title>À propos - Mon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+
+    <!-- Navigation -->
+    <header class="bg-teal-100 shadow">
+      <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center" aria-label="Navigation principale">
+        <a href="index.html" class="text-2xl font-bold focus:outline-none focus:ring-2 focus:ring-blue-500">Mon Portfolio</a>
+        <ul class="flex gap-4">
+          <li><a href="index.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500">Home</a></li>
+          <li><a href="about.html" class="underline font-semibold">About Me</a></li>
+          <li><a href="contact.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500">Contact</a></li>
+          <li><a href="portfolio.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section About -->
+    <main class="max-w-6xl mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-3xl font-bold mb-6">À propos de moi</h1>
+        <p class="mb-4">Je suis un étudiant en informatique passionné par le développement web et la création de jeux vidéo. J'aime concevoir des expériences interactives et accessibles pour tous les utilisateurs.</p>
+        <p class="mb-4">Mon objectif est de créer des interfaces conviviales, intuitives, et respectueuses des normes d’accessibilité.</p>
+        <div class="flex space-x-4 mt-6" aria-label="Réseaux sociaux ou compétences">
+          <span class="w-10 h-10 bg-gray-300 rounded-full" title="Logo placeholder"></span>
+          <span class="w-10 h-10 bg-gray-300 rounded-full"></span>
+          <span class="w-10 h-10 bg-gray-300 rounded-full"></span>
+          <span class="w-10 h-10 bg-gray-300 rounded-full"></span>
+        </div>
+      </div>
+      <div class="w-full h-72 bg-gray-300 rounded-md" aria-label="Photo de profil ou image de présentation"></div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="bg-teal-100 text-center py-4 text-sm">
+      <p>&copy; 2025 - Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+  </body>
+</html>
