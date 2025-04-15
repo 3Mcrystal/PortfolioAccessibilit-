@@ -1,0 +1,38 @@
+/* === PORTFOLIO PAGE STYLES === */
+
+.portfolio-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .portfolio-card {
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .portfolio-card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .portfolio-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
