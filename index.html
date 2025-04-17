@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio d'un développeur informatique - accessible et ergonomique" />
-    <title>Accueil - Mon Portfolio</title>
-    <link rel="stylesheet" href="styles/global.css">
-  </head>
-  <body class="bg-white text-gray-900 font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/global.css" />
+</head>
+<body>
+  <header>
+    <div>Logo</div>
+    <nav>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
 
-    <!-- Navigation -->
-    <header class="bg-teal-100 shadow">
-      <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center" aria-label="Navigation principale">
-        <a href="index.html" class="text-2xl font-bold focus:outline-none focus:ring-2 focus:ring-blue-500">Mon Portfolio</a>
-        <ul class="flex gap-4">
-          <li><a href="index.html" class="underline font-semibold">Home</a></li>
-          <li><a href="about.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500">About Me</a></li>
-          <li><a href="contact.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500">Contact</a></li>
-          <li><a href="portfolio.html" class="hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500">Portfolio</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Accueil -->
-    <main class="max-w-6xl mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h1 class="text-4xl font-bold mb-4">Header</h1>
-        <h2 class="text-xl mb-6 text-gray-700">Sub heading</h2>
-        <p class="mb-6">Bienvenue sur mon portfolio ! Je suis un développeur passionné par le web et le game dev. Découvrez mes projets récents.</p>
-        <a href="portfolio.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Portfolio page</a>
+  <main class="p-8">
+    <section class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="flex flex-col gap-4 max-w-md">
+        <h1 class="text-4xl font-bold">Header</h1>
+        <p class="text-lg text-gray-700">Sub heading</p>
+        <div class="w-full h-32 bg-gray-300" aria-hidden="true"></div>
+        <a href="portfolio.html">
+          <button>Portfolio page</button>
+        </a>
       </div>
-      <div class="w-full h-64 bg-gray-300 rounded-md"></div>
-    </main>
 
-    <!-- Pied de page -->
-    <footer class="bg-teal-100 text-center py-4 text-sm">
-      <p>&copy; 2025 - Mon Portfolio. Tous droits réservés.</p>
-    </footer>
+      <div class="w-64 h-64 bg-gray-300" aria-hidden="true"></div>
+    </section>
+  </main>
 
-  </body>
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
 </html>

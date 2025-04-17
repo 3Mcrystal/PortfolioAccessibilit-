@@ -35,4 +35,17 @@ form {
     align-items: center;
     gap: 0.5rem;
   }
+
+  header, footer {
+    background-color: #AFDBD7;
+    color: #000000;
+    padding: 1rem;
+  }
+  
+  /* Header layout */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
