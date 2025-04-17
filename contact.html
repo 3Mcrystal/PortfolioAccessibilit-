@@ -8,55 +8,52 @@
     <link rel="stylesheet" href="styles/contact.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="logo">Logo</div>
+    <header>
+      <div>Logo</div>
       <nav>
-        <ul>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="index.html">Home</a></li>
-        </ul>
+        <a href="about.html">À propos</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="index.html">Acceuil</a>
       </nav>
     </header>
 
-    <main class="contact-main">
-      <h1>Contact Me</h1>
+    <main class="contact-form-container">
+      <h1>Me contacter</h1>
       <form class="contact-form" action="#" method="POST">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" required />
+        <label for="Prénom">Prénom</label>
+        <input type="text" id="prénom" name="prénom" required />
 
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last-name" required />
+        <label for="Nom">Nom</label>
+        <input type="text" id="nom" name="nome" required />
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required />
 
-        <label for="appointment">Appointment Date (optional)</label>
-        <input type="date" id="appointment" name="appointment" />
+        <label for="rendez-vous">Date de rendez-vous (optionel)</label>
+        <input type="date" id="rdv" name="rdv" />
 
         <label for="service">Service</label>
         <select id="service" name="service" required>
-          <option value="">-- Please choose an option --</option>
-          <option value="consulting">Consulting</option>
+          <option value="">-- choisissez une option --</option>
+          <option value="Consultation">Consultation</option>
           <option value="development">Development</option>
           <option value="design">Design</option>
         </select>
 
-        <label for="inquiry">Inquiry</label>
-        <textarea id="inquiry" name="inquiry" rows="5" required></textarea>
+        <label for="Requête">Requête</label>
+        <textarea id="Requête" name="Requête" rows="5" required></textarea>
 
         <div class="form-footer">
           <input type="checkbox" id="terms" name="terms" required />
-          <label for="terms">I agree to the terms and conditions</label>
+          <label for="terms">J'accepte les termes et les conditions</label>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit">envoyer</button>
       </form>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2025 Your Name</p>
+    <footer class="bg-teal-100 text-center py-4 text-sm">
+      <p>&copy; 2025 - Mon Portfolio. Tous droits réservés.</p>
     </footer>
   </body>
 </html>
