@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/contact.css" />
   </head>
+
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      const message = document.getElementById('form-message');
+      message.textContent = 'Formulaire envoyé. Redirection vers le portfolio...';
+      
+      // Accessibilité : Forcer relecture screen reader
+      message.setAttribute('aria-live', 'assertive');
+  
+      // Redirection après 2 secondes
+      setTimeout(() => {
+        window.location.href = 'portfolio.html';
+      }, 2000);
+    });
+  </script>
+  
+
   <body>
     <header>
       <div>Logo</div>
@@ -19,6 +38,7 @@
 
     <main class="contact-form-container">
       <h1>Me contacter</h1>
+      <p id="form-message" aria-live="polite" class="form-message"></p>
       <form class="contact-form" action="#" method="POST">
         <label for="Prénom">Prénom</label>
         <input type="text" id="prénom" name="prénom" required />
