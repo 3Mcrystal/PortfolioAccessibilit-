@@ -11,68 +11,46 @@
   <body class="bg-white text-gray-900 font-sans">
 
     <!-- Navigation -->
-    <header class="bg-teal-100 py-4 px-6 flex justify-between items-center">
-      <div class="font-bold text-xl">Logo</div>
-      <nav class="space-x-4">
-        <a href="about.html" class="hover:underline">À propos</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
-        <a href="index.html" class="hover:underline">Accueil</a>
+    <header>
+      <div>Logo</div>
+      <nav>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Acceuil</a>
       </nav>
     </header>
 
-    <!-- Section présentation -->
-    <section class="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-12">
-      <div class="flex-1 h-64 bg-gray-300 rounded" aria-hidden="true"></div>
-      <div class="flex-1 text-center md:text-left">
-        <h1 class="text-4xl font-bold mb-4">Développeur & Passionné</h1>
-        <p class="text-lg text-gray-700">Je conçois des jeux et applications interactives avec passion. Voici quelques projets qui illustrent mon parcours.</p>
-      </div>
-    </section>
+    <!-- Section Portfolio -->
+    <main class="max-w-6xl mx-auto px-4 py-20">
+      <h1 class="text-3xl font-bold text-center mb-12">Exemples de réalisations</h1>
 
-<!-- Section Portfolio -->
-<main class="max-w-6xl mx-auto px-4 pb-20">
-  <h2 class="text-2xl font-bold text-center mb-12">Exemples de réalisations</h2>
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" aria-label="Exemples de réalisations">
+        <!-- Exemple 1 -->
+        <article class="bg-gray-100 p-4 rounded shadow">
+          <div class="h-40 bg-gray-300 rounded mb-4" aria-hidden="true"></div>
+          <h2 class="text-xl font-semibold mb-2">Donjon Miaoustérieux</h2>
+          <p class="text-sm text-gray-700">Projet Ydays. Jeux vidéo en VR dévelloper en blueprint sur unreal Engine 5.</p>
+          <p class="text-sm text-gray-700">Le projet étant toujours en cours, il n'est pas accesible au public</p>
+        </article>
 
-  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" aria-label="Exemples de réalisations">
-    
-    <!-- Projet 1 -->
-    <article class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-             role="region" aria-labelledby="proj-1-title">
-      <div class="w-full h-40 bg-gray-300 rounded mb-4" aria-hidden="true"></div>
-      <h3 id="proj-1-title" class="text-xl font-semibold mb-2">Donjon Miaoustérieux</h3>
-      <p class="text-sm text-gray-700 mb-2">Projet Ydays en VR, développé sur Unreal Engine 5 avec Blueprints.</p>
-      <p class="text-sm text-gray-700 mb-4">Le projet est en cours et non accessible au public.</p>
-    </article>
+        <!-- Exemple 2 -->
+        <article class="bg-gray-100 p-4 rounded shadow">
+          <div class="h-40 bg-gray-300 rounded mb-4" aria-hidden="true"></div>
+          <h2 class="text-xl font-semibold mb-2">Hangman web</h2>
+          <p class="text-sm text-gray-700">Projet visant à recréer le jeu du pendu en web en HTML / CSS et golang</p>
+          <a href="https://github.com/3Mcrystal/hangman-web" class="bouton" target="_blank">Voir Hangman web sur github</a>
+        </article>
 
-    <!-- Projet 2 -->
-    <article class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-             role="region" aria-labelledby="proj-2-title">
-      <div class="w-full h-40 bg-gray-300 rounded mb-4" aria-hidden="true"></div>
-      <h3 id="proj-2-title" class="text-xl font-semibold mb-2">Hangman web</h3>
-      <p class="text-sm text-gray-700 mb-4">Jeu du pendu en HTML / CSS et Go. Projet web ludique et interactif.</p>
-      <a href="https://github.com/3Mcrystal/hangman-web" 
-         class="text-blue-600 font-medium hover:underline" 
-         target="_blank" rel="noopener noreferrer">
-         Voir sur GitHub
-      </a>
-    </article>
-
-    <!-- Projet 3 -->
-    <article class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-             role="region" aria-labelledby="proj-3-title">
-      <div class="w-full h-40 bg-gray-300 rounded mb-4" aria-hidden="true"></div>
-      <h3 id="proj-3-title" class="text-xl font-semibold mb-2">Telekinesis Game</h3>
-      <p class="text-sm text-gray-700 mb-4">Prototype Unity d’un système de télékinésie. En cours d’amélioration.</p>
-      <a href="https://github.com/3Mcrystal/TelekinesisGame" 
-         class="text-blue-600 font-medium hover:underline" 
-         target="_blank" rel="noopener noreferrer">
-         Voir sur GitHub
-      </a>
-    </article>
-
-  </section>
-</main>
-
+        <!-- Exemple 3 -->
+        <article class="bg-gray-100 p-4 rounded shadow">
+          <div class="h-40 bg-gray-300 rounded mb-4" aria-hidden="true"></div>
+          <h2 class="text-xl font-semibold mb-2">Telekinesis game</h2>
+          <p class="text-sm text-gray-700">Simple projet unity réalisé en cours, recréant un système de télékinésie</p>
+          <p class="text-sm text-gray-700">Ce projet sera améliorer dans le futur</p>
+          <a href="https://github.com/3Mcrystal/TelekinesisGame" class="bouton" target="_blank">Voir Telekinesis game sur github</a>
+        </article>
+      </section>
+    </main>
 
     <!-- Pied de page -->
     <footer class="bg-teal-100 text-center py-4 text-sm">
