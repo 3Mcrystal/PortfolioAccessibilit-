@@ -8,60 +8,43 @@
     <link rel="stylesheet" href="styles/contact.css" />
   </head>
 
-  <script>
-    document.querySelector('.contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const message = document.getElementById('form-message');
-      message.textContent = 'Formulaire envoyé. Redirection vers le portfolio...';
-      
-      // Accessibilité : Forcer relecture screen reader
-      message.setAttribute('aria-live', 'assertive');
-  
-      // Redirection après 2 secondes
-      setTimeout(() => {
-        window.location.href = 'portfolio.html';
-      }, 2000);
-    });
-  </script>
-  
-
   <body>
     <header>
       <div>Logo</div>
       <nav>
         <a href="about.html">À propos</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="index.html">Acceuil</a>
+        <a href="index.html">Accueil</a>
       </nav>
     </header>
 
     <main class="contact-form">
       <h1>Me contacter</h1>
       <p id="form-message" aria-live="polite" class="form-message"></p>
-      <form class="contact-form" action="#" method="POST">
-        <label for="Prénom">Prénom</label>
+
+      <form id="formulaire-contact" action="#" method="POST">
+        <label for="prénom">Prénom</label>
         <input type="text" id="prénom" name="prénom" required />
 
-        <label for="Nom">Nom</label>
-        <input type="text" id="nom" name="nome" required />
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required />
 
-        <label for="rendez-vous">Date de rendez-vous (optionel)</label>
+        <label for="rdv">Date de rendez-vous (optionnel)</label>
         <input type="date" id="rdv" name="rdv" />
 
         <label for="service">Service</label>
         <select id="service" name="service" required>
           <option value="">-- choisissez une option --</option>
           <option value="Consultation">Consultation</option>
-          <option value="development">Development</option>
-          <option value="design">Design</option>
+          <option value="Development">Développement</option>
+          <option value="Design">Design</option>
         </select>
 
-        <label for="Requête">Requête</label>
-        <textarea id="Requête" name="Requête" rows="5" required></textarea>
+        <label for="requete">Requête</label>
+        <textarea id="requete" name="requete" rows="5" required></textarea>
 
         <div class="form-footer">
           <input type="checkbox" id="terms" name="terms" required />
@@ -75,5 +58,20 @@
     <footer class="bg-teal-100 text-center py-4 text-sm">
       <p>&copy; 2025 - Mon Portfolio. Tous droits réservés.</p>
     </footer>
+
+    <!-- Script placé ici pour être exécuté après le chargement du DOM -->
+    <script>
+      document.getElementById('formulaire-contact').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const message = document.getElementById('form-message');
+        message.textContent = 'Formulaire envoyé. Redirection vers le portfolio...';
+        message.setAttribute('aria-live', 'assertive');
+
+        setTimeout(() => {
+          window.location.href = 'portfolio.html';
+        }, 2000);
+      });
+    </script>
   </body>
 </html>
